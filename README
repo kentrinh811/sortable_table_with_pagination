@@ -1,0 +1,31 @@
+ページネーション・ソート対応のテーブル作成
+　ファイル　table.js
+  使い方
+　 下記のフォーマットでnewする。
+	var tableObj = new SortableTable({id:'テーブルを表示するノードの親のID',
+			data_set:テーブルデータ※後述
+			block_num:１画面最大表示件数
+			call_back:画面描画後に呼び出すフック関数
+		 });
+   テーブルデータ
+　　{ option: 出力するテーブルタグに付加する属性（style="width:52em;"など),
+     header:[
+		{name:'列のタイトル',sort:'ソート種別（number or normal)',width:'列幅'}
+　　　　　　　　　　　　　　　　：  ←列の数だけ上記エントリを作成
+　　　　],
+    data:[
+	  [行１、列１のデータ, 行１、列2のデータ,…],
+			      :    ←行の数だけ上記エントリを作成
+　　]}
+
+(例)
+   本aが２９０円、本Bが３３０円,本Cが４５０円で１画面最大表示レコードが２件の場合
+var tableObj = new SortableTable({id:'book_div',
+    data_set:{option:'class=”list”',header:
+	[{name:'書籍名',sort:'normal',width:'10em'},
+   	 {name:'金額',sort:'number',width:'6em'}],
+     data:[['a','290円'],['b','330円'],['c','450円']]},
+    block_num: 2,
+    call_back:null
+   });
+

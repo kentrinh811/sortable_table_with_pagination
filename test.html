@@ -1,0 +1,20 @@
+<html>
+  <head>
+<link href="css/table.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype-1.6.0.3.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+  </head>
+  <body>
+<div id="book_div" style="z-index:10;">
+<script type="text/javascript">
+var tableObj = new SortableTable({id:'book_div',
+    data_set:{option:'class="list"',header:
+	[{name:'書籍名',sort:'normal',width:'10em'},
+   	 {name:'金額',sort:'number',width:'6em'}],
+     data:[['a','290円'],['b','330円'],['c','450円']]},
+    block_num:2,
+    call_back:null
+   });
+</script>
+  </body>
+</html>

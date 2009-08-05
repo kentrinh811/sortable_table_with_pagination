@@ -1,0 +1,34 @@
+.list
+{
+ border-collapse: collapse;
+}
+.list td
+{
+ height:10px;
+ border:1px #888 solid;
+}
+.list th
+{
+  border:1px #888 solid;
+  background-color:#555;
+  color:white;
+}
+.list th a
+{
+  color:white;
+  text-decoration:underline;
+}
+.nolink
+{
+  cursor:default;
+  color:black;
+  text-decoration:none;
+} 
+.noLink:visited
+{
+  color:black;
+} 
+.mini
+{
+    font-size:0.6em;
+}
