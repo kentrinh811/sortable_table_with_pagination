@@ -32,3 +32,40 @@
 {
     font-size:0.6em;
 }
+.paginate
+{
+  font-size:0.9em;
+}
+.record_count
+{
+  font-weight:bold;
+  color:red;
+}
+.paginate  a
+{
+  margin-left:0.5em;
+  color:blue;
+  text-decoration:underline;
+}
+.paginate a.noLink
+{
+  cursor:default;
+  color:black;
+  text-decoration:none;
+}
+.paginate a.noLink:visited
+{
+  color:black;
+}
+.paginate a:visited
+{
+  color:blue;
+}
+.paginate a:hover
+{
+  background-color:#fff;
+}
+.paginate
+{
+  margin-bottom:5px;
+}
